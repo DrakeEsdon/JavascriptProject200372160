@@ -1,0 +1,25 @@
+extends ../layouts/main.pug
+block content
+    .container
+        header
+            h1 New Task
+
+        div
+            form(action="/tasks", method="POST")
+                .form-group
+                    label Title
+                    input.form-control(name="task[title]", required)
+
+                .form-group
+                    label Description of task
+                    textarea.form-control(name="task[content]")
+
+                .form-group
+                    label Completion Status
+                    select.form-control(name="task[status]", required)
+                        option(value="Started") Started
+                        option(value="To be Completed") To be Completed
+                        option(value="Completed") Completed 
+
+                .form-group
+                        button.btn.btn-dark(type="submit") Submit

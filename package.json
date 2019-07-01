@@ -1,0 +1,26 @@
+{
+  "name": "comp-2068-thursday",
+  "version": "1.0.0",
+  "description": "Blogging Platform",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrakeEsdon/Comp-2068-thursday.git"
+  },
+  "author": "Drake Esdon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DrakeEsdon/Comp-2068-thursday/issues"
+  },
+  "homepage": "https://github.com/DrakeEsdon/Comp-2068-thursday#readme",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.6.2",
+    "pug": "^2.0.3"
+  }
+}

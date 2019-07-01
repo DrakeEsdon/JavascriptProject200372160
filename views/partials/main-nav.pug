@@ -1,0 +1,19 @@
+nav.navbar.fixed-top.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand(href='/') ToDo App
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+
+  #navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      li.nav-item
+        a.nav-link(href='/') Home
+      li.nav-item.dropdown
+        a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Tasks
+        .dropdown-menu
+          a.dropdown-item(href='/tasks') All Tasks
+          a.dropdown-item(href='/tasks/new') New Task 
+          a.dropdown-item(href='/tasks/completed') Completed Tasks
+          a.dropdown-item(href='/tasks/toBeCompleted') Incomplete Tasks
+          a.dropdown-item(href='/tasks/started') Started Tasks
+      li.nav-item
+        a.nav-link(href='/contact') Contact
