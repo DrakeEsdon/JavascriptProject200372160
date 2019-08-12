@@ -28,15 +28,14 @@ app.use(bodyParser.urlencoded({
 
 //our routes
 const routes = require('./routes.js');
-app.use('/', routes);
+app.use('/api', routes);
+
+/*// Handles all other requests
+app.get('*', (req,res) => {
+    console.log(req.path);
+   res.sendFile path.join(__dirname + "/client/build/index.html"); 
+});*/
 
 //dynamic port listening
 const port = process.env.PORT || 4000;       
 app.listen(port, () => console.log(`Listening on port ${port}`));
-
-// Our Views
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
-app.use('/css', express.static('assets/stylesheets'));
-app.use('/js', express.static('assets/javascripts'));
-app.use('/images', express.static('assets/images'));

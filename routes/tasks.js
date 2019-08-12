@@ -5,10 +5,6 @@ const tasksController = require('../controllers/tasksController');
 // Begin routes
 
 router.get('/', tasksController.index);
-router.get('/new', tasksController.new);
-router.get('/completed', tasksController.completed)
-router.get('/toBeCompleted', tasksController.toBeCompleted)
-router.get('/started', tasksController.started)
 router.get('/:id', tasksController.show);
 router.get('/:id/edit', tasksController.edit);
 router.post('/', tasksController.create);
